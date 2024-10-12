@@ -136,12 +136,15 @@ export function jsonrepair(text: string): string {
     const start = i
 
     let changed = parseWhitespace()
+    // Comment out the following block to preserve comments
+    /*
     do {
       changed = parseComment()
       if (changed) {
         changed = parseWhitespace()
       }
     } while (changed)
+    */
 
     return i > start
   }
