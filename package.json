@@ -24,7 +24,15 @@
       "types": "./lib/types/stream.d.ts"
     }
   },
-  "keywords": ["simple", "json", "repair", "fix", "invalid", "stream", "streaming"],
+  "keywords": [
+    "simple",
+    "json",
+    "repair",
+    "fix",
+    "invalid",
+    "stream",
+    "streaming"
+  ],
   "bin": {
     "jsonrepair": "./bin/cli.js"
   },
@@ -49,9 +57,13 @@
     "release:push": "git push && git push --tag",
     "release:publish": "npm publish",
     "release-dry-run": "npm run build-and-test && standard-version --dry-run",
-    "prepare": "husky"
+    "prepare": "npm run build"
   },
-  "files": ["README.md", "LICENSE.md", "lib"],
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "lib"
+  ],
   "author": "Jos de Jong",
   "license": "ISC",
   "devDependencies": {
@@ -67,7 +79,6 @@
     "benchmark": "2.1.4",
     "cpy-cli": "5.0.0",
     "del-cli": "5.1.0",
-    "husky": "9.0.11",
     "npm-run-all": "4.1.5",
     "rollup": "4.18.0",
     "standard-version": "9.5.0",
